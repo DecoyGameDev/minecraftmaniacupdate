@@ -1,6 +1,7 @@
 package net.animatrontv.maniacupdate;
 
 import com.mojang.logging.LogUtils;
+import net.animatrontv.maniacupdate.item.ModCreativeModeTabs;
 import net.animatrontv.maniacupdate.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -24,6 +25,10 @@ public class ManiacUpdate
     public ManiacUpdate() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        // TAB
+
+        ModCreativeModeTabs.register(modEventBus);
+
         // REGISTER ITEMS
         ModItems.register(modEventBus);
 
@@ -41,6 +46,7 @@ public class ManiacUpdate
     {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.DIRTYMETAL);
+            event.accept(ModItems.REFINEDMETAL);
         }
     }
 

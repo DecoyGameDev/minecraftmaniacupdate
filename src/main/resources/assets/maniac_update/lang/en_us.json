@@ -1,3 +1,5 @@
 {
-  "item.maniac_update.dirtymetal": "Dirty Metal"
+  "item.maniac_update.dirtymetal": "Dirty Metal",
+  "item.maniac_update.refinedmetal": "Refined Metal",
+  "creativetab.metal_tab": "Metals"
 }
