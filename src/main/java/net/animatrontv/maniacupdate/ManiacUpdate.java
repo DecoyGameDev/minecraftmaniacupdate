@@ -1,6 +1,8 @@
 package net.animatrontv.maniacupdate;
 
 import com.mojang.logging.LogUtils;
+import net.animatrontv.maniacupdate.item.ModItems;
+import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -21,6 +23,10 @@ public class ManiacUpdate
 
     public ManiacUpdate() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        // REGISTER ITEMS
+        ModItems.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
@@ -33,7 +39,9 @@ public class ManiacUpdate
 
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
+            event.accept(ModItems.DIRTYMETAL);
+        }
     }
 
     @SubscribeEvent
