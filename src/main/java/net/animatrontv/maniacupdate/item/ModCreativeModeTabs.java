@@ -27,6 +27,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.REFINEDMETAL_BLOCK.get());
                         pOutput.accept(ModBlocks.DIRTYMETAL_ORE.get());
                         pOutput.accept(ModBlocks.REFINEDMETAL_ORE.get());
+                        pOutput.accept(ModItems.BLAPPLE.get());
                     })
                     .build());
 
