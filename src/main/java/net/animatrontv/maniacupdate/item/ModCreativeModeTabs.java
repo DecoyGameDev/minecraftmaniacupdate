@@ -1,6 +1,7 @@
 package net.animatrontv.maniacupdate.item;
 
 import net.animatrontv.maniacupdate.ManiacUpdate;
+import net.animatrontv.maniacupdate.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -22,6 +23,10 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.DIRTYMETAL.get());
                         pOutput.accept(ModItems.REFINEDMETAL.get());
+                        pOutput.accept(ModBlocks.DIRTYMETAL_BLOCK.get());
+                        pOutput.accept(ModBlocks.REFINEDMETAL_BLOCK.get());
+                        pOutput.accept(ModBlocks.DIRTYMETAL_ORE.get());
+                        pOutput.accept(ModBlocks.REFINEDMETAL_ORE.get());
                     })
                     .build());
 

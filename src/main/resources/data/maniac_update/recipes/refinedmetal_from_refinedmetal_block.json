@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "maniac_update:refinedmetal_block"
+    }
+  ],
+  "result": {
+    "item": "maniac_update:refinedmetal",
+    "count": 9
+  }
+}

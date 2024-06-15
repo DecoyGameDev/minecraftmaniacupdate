@@ -1,6 +1,7 @@
 package net.animatrontv.maniacupdate;
 
 import com.mojang.logging.LogUtils;
+import net.animatrontv.maniacupdate.block.ModBlocks;
 import net.animatrontv.maniacupdate.item.ModCreativeModeTabs;
 import net.animatrontv.maniacupdate.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -31,6 +32,9 @@ public class ManiacUpdate
 
         // REGISTER ITEMS
         ModItems.register(modEventBus);
+
+        // BLOCKS REGISTER
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);

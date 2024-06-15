@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "maniac_update:dirtymetal_block"
+    }
+  ],
+  "result": {
+    "item": "maniac_update:dirtymetal",
+    "count": 9
+  }
+}

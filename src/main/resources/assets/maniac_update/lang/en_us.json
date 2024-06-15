@@ -1,5 +1,9 @@
 {
   "item.maniac_update.dirtymetal": "Dirty Metal",
   "item.maniac_update.refinedmetal": "Refined Metal",
-  "creativetab.metal_tab": "Metals"
+  "block.maniac_update.dirtymetal_ore": "Dirty Metal Ore",
+  "block.maniac_update.refinedmetal_ore": "Refined Metal Ore",
+  "creativetab.metal_tab": "Metals",
+  "block.maniac_update.dirtymetal_block": "Block of Dirty Metal",
+  "block.maniac_update.refinedmetal_block": "Block of Refined Metal"
 }
