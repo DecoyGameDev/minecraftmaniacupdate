@@ -28,6 +28,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.DIRTYMETAL_ORE.get());
                         pOutput.accept(ModBlocks.REFINEDMETAL_ORE.get());
                         pOutput.accept(ModItems.BLAPPLE.get());
+                        pOutput.accept(ModBlocks.MAX_BLOCK.get());
+                        pOutput.accept(ModItems.EPICMETAL.get());
                     })
                     .build());
 

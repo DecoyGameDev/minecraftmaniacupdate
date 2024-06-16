@@ -2,6 +2,7 @@ package net.animatrontv.maniacupdate.block;
 
 import net.animatrontv.maniacupdate.ManiacUpdate;
 import net.animatrontv.maniacupdate.item.ModItems;
+import net.animatrontv.maniacupdate.sound.ModSounds;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -34,6 +35,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> REFINEDMETAL_ORE = registerBlock("refinedmetal_ore",
             () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).requiresCorrectToolForDrops(),
                     UniformInt.of(3,6)));
+
+    public static final RegistryObject<Block> MAX_BLOCK = registerBlock("max_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.BONE_BLOCK).sound(ModSounds.SOUND_BLOCK_SOUNDS)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

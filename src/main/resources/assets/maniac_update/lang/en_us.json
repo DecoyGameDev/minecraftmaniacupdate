@@ -6,5 +6,9 @@
   "creativetab.metal_tab": "Maniac Update",
   "block.maniac_update.dirtymetal_block": "Block of Dirty Metal",
   "block.maniac_update.refinedmetal_block": "Block of Refined Metal",
-  "item.maniac_update.blapple": "Blapple"
+  "item.maniac_update.blapple": "Blapple",
+  "block.maniac_update.max_block": "h e l p  m e . . .",
+  "sounds.maniac_update.max_block_break": "Max Scream",
+  "sounds.maniac_update.max_block_hit": "Max Says Ouch",
+  "item.maniac_update.epicmetal": "Epic Metal"
 }

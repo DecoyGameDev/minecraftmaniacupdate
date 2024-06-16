@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 50,
+  "experience": 1.5,
+  "group": "refinedmetal",
+  "ingredient": {
+    "item": "maniac_update:refinedmetal"
+  },
+  "result": "minecraft:iron_ingot"
+}
